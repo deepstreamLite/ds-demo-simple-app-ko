@@ -45,6 +45,9 @@ UserListEntryViewModel.prototype.deleteUser = function( viewModel, event ) {
 	this.record.delete();
 };
 
+/**
+ * Class UserViewModel
+ */
 UserViewModel = function() {
 	this.record = ds.record.getAnonymousRecord();
 	this.firstname = koTools.getObservable( this.record, 'firstname' );
